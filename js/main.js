@@ -25,7 +25,7 @@ fetch(city_coor)
         const selectedOption = select.options[select.selectedIndex];
         // alert(selectedOption.innerText);
         const selectedValue= select.value.split(',');
-        const meteo =`http://www.7timer.info/bin/api.pl?lon=${selectedValue[1]}&lat=${selectedValue[0]}&product=civillight&output=json`;
+        const meteo =`https://www.7timer.info/bin/api.pl?lon=${selectedValue[1]}&lat=${selectedValue[0]}&product=civillight&output=json`;
         let metData;
         fetch(meteo)
         .then(response=>{
@@ -118,7 +118,7 @@ fetch(city_coor)
     console.error('Error fetching JSON:', error);
   });
 
-  const meteo = "http://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civil&output=json"
+  const meteo = "https://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civil&output=json"
   let meteoData;
   fetch(meteo)
   .then(response=>{
