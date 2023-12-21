@@ -53,7 +53,7 @@ fetch(city_coor)
               const cardbody=document.createElement('div');
               cardbody.className="card-body";
               const column =document.createElement('div');
-              column.className="col-l-3 col-sm-6 mb-3";
+              column.className="col-lg-3 col-sm-6 mb-3";
               
               const dateP=document.createElement('h5')
               const heat=document.createElement('p')
