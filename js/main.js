@@ -53,7 +53,7 @@ fetch(city_coor)
               const cardbody=document.createElement('div');
               cardbody.className="card-body";
               const column =document.createElement('div');
-              column.className="col-3 mb-3";
+              column.className="col-l-3 col-sm-6 mb-3";
               
               const dateP=document.createElement('h5')
               const heat=document.createElement('p')
@@ -117,17 +117,3 @@ fetch(city_coor)
   .catch(error => {
     console.error('Error fetching JSON:', error);
   });
-
-  const meteo = "https://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=civil&output=json"
-  let meteoData;
-  fetch(meteo)
-  .then(response=>{
-    if(!response.ok){throw new Error(`HTTP error! status: ${response.status}`);}return response.json();
-  })
-  .then(data=>{
-    meteoData=data;
-    console.log(meteoData);
-  })
-
-
-
